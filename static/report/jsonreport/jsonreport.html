@@ -1,0 +1,336 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="webkit" name="renderer">
+        <meta content="on" http-equiv="cleartype">
+        <meta content="True" name="HandheldFriendly">
+        <meta content="320" name="MobileOptimized">
+        <meta content="no-cache" name="turbolinks-cache-control">
+        <title>Pad LVIPFS | ShowMeBug</title>
+        <meta name="csrf-param" content="authenticity_token">
+        <meta name="csrf-token" content="E5afv74ZimKI3B6LH3hUSRzTrJjnN5VyBKHvrXyEFZQDHo0aXonDAVdRWrsVJhaGw866ha3w11E9Qh1n3PLAbw==">
+        <meta name="action-cable-url" content="/cable">
+        <link rel="stylesheet" media="all" href="./jsonreport/reportjson.css" data-turbolinks-track="reload">
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script src="./jsonreport/application-236e34921d75ca77e2d4.js" data-turbolinks-track="reload"></script>
+        <style></style>
+        <style></style>
+        <script src="./jsonreport/ga-378889ea9031328b1a4c.js" data-turbolinks-track="reload"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-141290222-4"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-141290222-4"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.showmebug.com/packs/media/images/favicon-91d76ea4778bc557340610c5e2cd150f.png">
+    </head>
+    <body class="pads-show-page">
+        <script>
+            //<![CDATA[
+            window.gon = {};
+            gon.user_id = null;
+            gon.user_name = null;
+            gon.pad_number = "LVIPFS";
+            gon.languages = [{
+                "type": "golang",
+                "readable_type": "Golang",
+                "codemirror_mode": "text/x-go",
+                "description": "# Golang 执行环境\n我们选用的 Golang 最新环境，你的 go 代码会至 ShowMeBug 提供的该环境中。\n\n你必须定义一个包名为 `main` 的包，并实现 `main()` 函数，这样我们才能运行出结果。\n\n一个简单的例子:\n\n```golang\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n  fmt.Println(\"Hello, world\")\n}\n```\n",
+                "default_snippet": "// 必须定义一个 包名为 `main` 的包，并实现 `main()` 函数。\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n  fmt.Println(\"Hello, world\")\n}\n"
+            }, {
+                "type": "html",
+                "readable_type": "HTML/CSS/JS",
+                "codemirror_mode": "text/html",
+                "description": "# HTML/CSS/JS 环境说明\nHTML/CSS/JS 使用浏览的 iframe 进行实时渲染，你可以在这里运行 HTML/CSS/JS 代码。\n同时建议你打开浏览器的调试器，如果有错误信息可实时输出。\n\n该环境是通用的前端运行环境，你当然可以用来考察技术牛人的 React，VueJS，AngularJS 等前端框架的能力。\n\n## React 举例\n\n```html\n\u003chtml\u003e\n  \u003chead\u003e\n    \u003cmeta charset=\"UTF-8\" /\u003e\n    \u003ctitle\u003eHello World\u003c/title\u003e\n    \u003cscript src=\"https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.production.min.js\"\u003e\u003c/script\u003e\n    \u003cscript src=\"https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.production.min.js\"\u003e\u003c/script\u003e\n    \u003cscript src=\"https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js\"\u003e\u003c/script\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cdiv id=\"root\"\u003e\u003c/div\u003e\n    \u003cscript type=\"text/jsx\"\u003e\n      ReactDOM.render(\n        \u003ch1\u003eHello, React!\u003c/h1\u003e,\n        document.getElementById('root')\n      );\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e\n```\n## VueJS 举例\n```html\n\u003chtml\u003e\n  \u003chead\u003e\n    \u003cscript src=\"https://unpkg.com/vue\"\u003e\u003c/script\u003e\n    \u003cstyle\u003e\n      body {\n        background-color: #1d2126;\n        color: white;\n      }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cdiv id=\"app\"\u003e\u003cp\u003e{{ message }}\u003c/p\u003e\u003c/div\u003e\n    \u003cscript\u003e\n      new Vue({\n        el: '#app',\n        data: {\n          message: 'Hello World!',\n        },\n      })\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e\n```\n",
+                "default_snippet": "\u003chtml\u003e\n  \u003chead\u003e\n    \u003cstyle\u003e\n      h1 { font-size: 30px; }\n    \u003c/style\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003ch1\u003eHello HTML/CSS/JS!\u003c/h1\u003e\n    \u003cscript\u003e\n      console.log('hello world!')\n    \u003c/script\u003e\n  \u003c/body\u003e\n\u003c/html\u003e\n"
+            }, {
+                "type": "java",
+                "readable_type": "Java",
+                "codemirror_mode": "text/x-java",
+                "description": "# Java 执行环境\n我们选用的 OpenJDK 14 最新环境，你的 java 代码会至 ShowMeBug 提供的该环境中。\n\n你必须定义一个 `ShowMeBug` 类和 `public static void main(String[] args)` 方法，这样我们才能运行出结果。\n\n一个简单的例子:\n\n```java\npublic class ShowMeBug {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World!\");\n  }\n}\n```\n",
+                "default_snippet": "// 必须定义 `ShowMeBug` 入口类和 `public static void main(String[] args)` 入口方法\npublic class ShowMeBug {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World!\");\n  }\n}\n"
+            }, {
+                "type": "javascript",
+                "readable_type": "JavaScript",
+                "codemirror_mode": "text/javascript",
+                "description": "# JavaScript 环境说明\nJavaScript 会连接到 ShowMeBug 提供的独立专用的 Node10.16.3(LTS) 服务器运行，这里可以方便考察技术牛人的 ES5，ES6 技术能力。\n\n可以理解为在本地电脑执行 `node xx.js` 后的结果。\n\n参考如下一个简单的举例:\n\n```javascript\nclass Person {\n  constructor(age) {\n    this.age = age\n  }\n\n  say() {\n    console.log(this.age)\n  }\n}\n\nconst person = new Person(20)\n// 控制台输出 20\nperson.say()\n```\n",
+                "default_snippet": "for(let i=0; i\u003c3; i++){\n  console.log('hello world')\n}\n"
+            }, {
+                "type": "php",
+                "readable_type": "PHP",
+                "codemirror_mode": "text/x-php",
+                "description": "# PHP 执行环境\n我们选用的 PHP 7.3 最新环境，你的 PHP 代码会至 ShowMeBug 提供的该环境中。\n\n我们会自动用 `\u003c?php xx ?\u003e` 进行包装，*请不要重复添加标记*。\n\n一个简单的例子:\n\n```php\nfor($i=0; $i\u003c3; $i++){\n  echo \"hello world\\n\";\n}\n```\n",
+                "default_snippet": "for($i=0; $i\u003c3; $i++){\n  echo \"hello world\\n\";\n}\n"
+            }, {
+                "type": "plaintext",
+                "readable_type": "Plain Text",
+                "codemirror_mode": "markdown",
+                "description": "# 文本模式\n这里提供通用的 \"白板\" 交流环境，你可以在这里与技术大牛探讨一些非技术性的问题。\n\n我们提供文本模式的目的在于：\n\n1. 很多人的技术术语发音并不准确，把内容写在书面上便于沟通理解。\n2. 记录你的面试过程，事后便于回顾当时面试经过，准确评估技术大牛的能力。\n\n我们支持 Markdown 语法高亮\n\n- **加粗** - `**加粗**`\n- *倾斜* - `*倾斜*`\n- ~~删除线~~ - `~~删除线~~`\n- `Code 标记` - ``Code 标记``\n- [超级链接](http://github.com) - `[超级链接](http://github.com)`\n- [username@gmail.com](mailto:username@gmail.com) - `[username@gmail.com](mailto:username@gmail.com)`\n",
+                "default_snippet": "## 请在下方描述你的面试题内容( 支持Markdown )\n"
+            }, {
+                "type": "python2",
+                "readable_type": "Python 2",
+                "codemirror_mode": "text/x-python",
+                "description": "# Python 2.7 执行环境\n我们选用的 Python 2.7 最新环境，你的 Python 代码会至 ShowMeBug 提供的该环境中。\n\n可以简单理解在本地执行 `python2 xx.py` 后输出的结果。\n\n一个简单的例子:\n\n```python\nfor i in range(3):\n  print 'hello world'\n```\n",
+                "default_snippet": "for i in range(3):\n  print 'hello world'\n"
+            }, {
+                "type": "python3",
+                "readable_type": "Python 3",
+                "codemirror_mode": "text/x-python",
+                "description": "# Python 3.7 执行环境\n我们选用的 Python 3.7 最新环境，你的 Python 代码会至 ShowMeBug 提供的该环境中。\n\n可以简单理解在本地执行 `python3 xx.py` 后输出的结果。\n\n一个简单的例子:\n\n```python\nfor i in range(3):\n  print('hello world')\n```\n",
+                "default_snippet": "for i in range(3):\n  print('hello world')\n"
+            }, {
+                "type": "ruby",
+                "readable_type": "Ruby",
+                "codemirror_mode": "text/x-ruby",
+                "description": "# Ruby 执行环境\n我们选用的 Ruby 2.5 环境，你的 Ruby 代码会传送至 ShowMeBug 提供的安装了 Ruby 2.5 版本的环境，你可以方便考察技术牛人对 Ruby 编程的理解。\n\n可以简单理解在本地执行 `ruby xx.rb` 后输出的结果。\n\n一个简单的例子:\n\n```ruby\n3.times do\n  puts \"hello world\"\nend\n```\n",
+                "default_snippet": "3.times do\n  puts 'hello world'\nend\n"
+            }];
+            gon.logger_level = "debug";
+            //]]>
+        </script>
+        <div class="pad-container">
+            <div class="header">
+                <button class="pad-action btn btn-primary" data-url="/runners" id="runner_submit">预览</button>
+            </div>
+            <div class="wrapper">
+                <div id="editor">
+                    <textarea id="codemirror" style="display: none;"></textarea>
+                    <div class="CodeMirror cm-s-monokai CodeMirror-wrap">
+                        <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;">
+                            <textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea>
+                        </div>
+                        <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true">
+                            <div style="min-width: 1px; height: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true">
+                            <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-scroll" tabindex="-1">
+                            <div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: -15px; border-right-width: 15px; min-height: 32px; padding-right: 0px; padding-bottom: 0px;">
+                                <div style="position: relative; top: 0px;">
+                                    <div class="CodeMirror-lines" role="presentation">
+                                        <div role="presentation" style="position: relative; outline: none;">
+                                            <div class="CodeMirror-measure">
+                                                <span>
+                                                    <span>​</span>
+                                                    x
+                                                </span>
+                                            </div>
+                                            <div class="CodeMirror-measure"></div>
+                                            <div style="position: relative; z-index: 1;"></div>
+                                            <div class="CodeMirror-cursors" style="visibility: hidden;">
+                                                <div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 24px;">&nbsp;</div>
+                                            </div>
+                                            <div class="CodeMirror-code" role="presentation">
+                                                <div style="position: relative;">
+                                                    <div class="CodeMirror-gutter-wrapper" style="left: -29px;">
+                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div>
+                                                    </div>
+                                                    <pre class=" CodeMirror-line " role="presentation">
+                                                        <span role="presentation" style="padding-right: 0.1px;">
+                                                            <span cm-text="">​</span>
+                                                        </span>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; height: 15px; width: 1px; border-bottom: 0px solid transparent; top: 32px;"></div>
+                            <div class="CodeMirror-gutters" style="height: 47px;">
+                                <div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div>
+                                <div class="CodeMirror-gutter locate"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CodeMirror cm-s-monokai CodeMirror-wrap">
+                        <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 52px; left: 42.5938px;">
+                            <textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea>
+                        </div>
+                        <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true">
+                            <div style="min-width: 1px; height: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true">
+                            <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-scroll" tabindex="-1">
+                            <div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: -15px; border-right-width: 15px; min-height: 80px; padding-right: 0px; padding-bottom: 0px;">
+                                <div style="position: relative; top: 0px;">
+                                    <div class="CodeMirror-lines" role="presentation">
+                                        <div role="presentation" style="position: relative; outline: none;">
+                                            <div class="CodeMirror-measure">
+                                                <pre>
+                                                    <span>xxxxxxxxxx</span>
+                                                </pre>
+                                            </div>
+                                            <div class="CodeMirror-measure"></div>
+                                            <div style="position: relative; z-index: 1;"></div>
+                                            <div class="CodeMirror-cursors" style="">
+                                                <div class="CodeMirror-cursor" style="left: 13.5938px; top: 48px; height: 24px;">&nbsp;</div>
+                                            </div>
+                                            <div class="CodeMirror-code" role="presentation">
+                                                <div style="position: relative;">
+                                                    <div class="CodeMirror-gutter-wrapper" style="left: -29px;">
+                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div>
+                                                    </div>
+                                                    <pre class=" CodeMirror-line " role="presentation">
+                                                        <span role="presentation" style="padding-right: 0.1px;">{</span>
+                                                    </pre>
+                                                </div>
+                                                <div style="position: relative;">
+                                                    <div class="CodeMirror-gutter-wrapper" style="left: -29px;">
+                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div>
+                                                    </div>
+                                                    <pre class=" CodeMirror-line " role="presentation">
+                                                        <span role="presentation" style="padding-right: 0.1px;">
+                                                            <span class="cm-tab" role="presentation" cm-text="  "></span>
+                                                            <span class="cm-string">"sdsds"</span>
+                                                            <span class="cm-operator">:</span>
+                                                            <span class="cm-string">"sds"</span>
+                                                        </span>
+                                                    </pre>
+                                                </div>
+                                                <div style="position: relative;">
+                                                    <div class="CodeMirror-gutter-wrapper" style="left: -29px;">
+                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div>
+                                                    </div>
+                                                    <pre class=" CodeMirror-line " role="presentation">
+                                                        <span role="presentation" style="padding-right: 0.1px;">}</span>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; height: 15px; width: 1px; border-bottom: 0px solid transparent; top: 80px;"></div>
+                            <div class="CodeMirror-gutters" style="height: 95px;">
+                                <div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div>
+                                <div class="CodeMirror-gutter locate"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="line"></div>
+                <div id="panel">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="terminal">
+                            <div dir="ltr" class="terminal xterm enable-mouse-events focus" tabindex="0">
+                                <div class="xterm-viewport" style="background-color: rgb(30, 30, 30);">
+                                    <div class="xterm-scroll-area" style="height: 528px;"></div>
+                                </div>
+                                <div class="xterm-screen" style="width: 720px; height: 528px;">
+                                    <div class="xterm-helpers">
+                                        <textarea class="xterm-helper-textarea" aria-label="Terminal input" aria-multiline="false" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style=""></textarea>
+                                        <div class="composition-view"></div>
+                                        <span class="xterm-char-measure-element" aria-hidden="true" style="font-family: Monaco, Menlo, monospace; font-size: 16px;">W</span>
+                                    </div>
+                                    <canvas class="xterm-text-layer" width="720" height="528" style="z-index: 0; width: 720px; height: 528px;"></canvas>
+                                    <canvas class="xterm-selection-layer" width="720" height="528" style="z-index: 1; width: 720px; height: 528px;"></canvas>
+                                    <canvas class="xterm-link-layer" width="720" height="528" style="z-index: 2; width: 720px; height: 528px;"></canvas>
+                                    <canvas class="xterm-cursor-layer" width="720" height="528" style="z-index: 3; width: 720px; height: 528px;"></canvas>
+                                </div>
+                            </div>
+                            <div dir="ltr" class="terminal xterm enable-mouse-events" tabindex="0">
+                                <div class="xterm-viewport" style="background-color: rgb(30, 30, 30);">
+                                    <div class="xterm-scroll-area" style="height: 528px;"></div>
+                                </div>
+                                <div class="xterm-screen" style="width: 720px; height: 528px;">
+                                    <div class="xterm-helpers">
+                                        <textarea class="xterm-helper-textarea" aria-label="Terminal input" aria-multiline="false" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea>
+                                        <div class="composition-view"></div>
+                                        <span class="xterm-char-measure-element" aria-hidden="true" style="font-family: Monaco, Menlo, monospace; font-size: 16px;">W</span>
+                                    </div>
+                                    <canvas class="xterm-text-layer" width="720" height="528" style="z-index: 0; width: 720px; height: 528px;"></canvas>
+                                    <canvas class="xterm-selection-layer" width="720" height="528" style="z-index: 1; width: 720px; height: 528px;"></canvas>
+                                    <canvas class="xterm-link-layer" width="720" height="528" style="z-index: 2; width: 720px; height: 528px;"></canvas>
+                                    <canvas class="xterm-cursor-layer" width="720" height="528" style="z-index: 3; width: 720px; height: 528px;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="html_terminal">
+                            <iframe srcdoc="<h1> hello world</h1><p>这里将输出你的 HTML/CSS/JS 结果</p>" style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="note">
+                            <textarea id="codemirror-note" placeholder="记录你的面试笔记，支持 Markdown 的语法" style="display: none;"></textarea>
+                            <div class="CodeMirror cm-s-monokai CodeMirror-wrap CodeMirror-empty">
+                                <div style="overflow: hidden; position: relative; width: 3px; height: 0px;">
+                                    <textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea>
+                                </div>
+                                <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true">
+                                    <div style="min-width: 1px;"></div>
+                                </div>
+                                <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true">
+                                    <div style="height: 100%; min-height: 1px;"></div>
+                                </div>
+                                <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                                <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                                <div class="CodeMirror-scroll" tabindex="-1">
+                                    <div class="CodeMirror-sizer" style="margin-left: 0px;">
+                                        <div style="position: relative;">
+                                            <div class="CodeMirror-lines" role="presentation">
+                                                <div role="presentation" style="position: relative; outline: none;">
+                                                    <pre class="CodeMirror-placeholder" style="height: 0px; overflow: visible; direction: ltr;">记录你的面试笔记，支持 Markdown 的语法</pre>
+                                                    <div class="CodeMirror-measure">
+                                                        <pre>
+                                                            <span>xxxxxxxxxx</span>
+                                                        </pre>
+                                                    </div>
+                                                    <div class="CodeMirror-measure"></div>
+                                                    <div style="position: relative; z-index: 1;"></div>
+                                                    <div class="CodeMirror-cursors"></div>
+                                                    <div class="CodeMirror-code" role="presentation"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="position: absolute; height: 30px; width: 1px;"></div>
+                                    <div class="CodeMirror-gutters" style="display: none;"></div>
+                                </div>
+                            </div>
+                            <div class="CodeMirror cm-s-monokai CodeMirror-wrap CodeMirror-empty">
+                                <div style="overflow: hidden; position: relative; width: 3px; height: 0px;">
+                                    <textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea>
+                                </div>
+                                <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true">
+                                    <div style="min-width: 1px;"></div>
+                                </div>
+                                <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true">
+                                    <div style="height: 100%; min-height: 1px;"></div>
+                                </div>
+                                <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                                <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                                <div class="CodeMirror-scroll" tabindex="-1">
+                                    <div class="CodeMirror-sizer" style="margin-left: 0px;">
+                                        <div style="position: relative;">
+                                            <div class="CodeMirror-lines" role="presentation">
+                                                <div role="presentation" style="position: relative; outline: none;">
+                                                    <pre class="CodeMirror-placeholder" style="height: 0px; overflow: visible; direction: ltr;">记录你的面试笔记，支持 Markdown 的语法</pre>
+                                                    <div class="CodeMirror-measure">
+                                                        <pre>
+                                                            <span>xxxxxxxxxx</span>
+                                                        </pre>
+                                                    </div>
+                                                    <div class="CodeMirror-measure"></div>
+                                                    <div style="position: relative; z-index: 1;"></div>
+                                                    <div class="CodeMirror-cursors"></div>
+                                                    <div class="CodeMirror-code" role="presentation"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="position: absolute; height: 30px; width: 1px;"></div>
+                                    <div class="CodeMirror-gutters" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

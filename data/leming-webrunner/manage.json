@@ -1,0 +1,14 @@
+{
+    "templateName": "leming-webrunner",
+    "dataList": [
+        {
+            "templateName": "leming-webrunner",
+            "templatePath": "D:\\workspace\\zw\\awesome-pdf\\jsontemplates\\leming-webrunner.json",
+            "dataName": "webrunner_result_2h",
+            "modifiedTime": "2019-11-30 20:48:37",
+            "createTime": "2020-04-05 13:30:44",
+            "dataPath": "D:\\workspace\\zw\\awesome-pdf\\data\\leming-webrunner\\webrunner_result_2h.json",
+            "pdfPath": "D:\\workspace\\zw\\awesome-pdf\\data\\leming-webrunner\\webrunner_result_2h.pdf"
+        }
+    ]
+}

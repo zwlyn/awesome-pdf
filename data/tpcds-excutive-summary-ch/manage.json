@@ -1,0 +1,14 @@
+{
+    "templateName": "tpcds-excutive-summary-ch",
+    "dataList": [
+        {
+            "templateName": "tpcds-excutive-summary-ch",
+            "templatePath": "D:\\workspace\\zw\\awesome-pdf\\jsontemplates\\tpcds-excutive-summary-ch.json",
+            "dataName": "tpcds_result",
+            "modifiedTime": "2020-01-15 16:28:05",
+            "createTime": "2020-04-05 13:30:44",
+            "dataPath": "D:\\workspace\\zw\\awesome-pdf\\data\\tpcds-excutive-summary-ch\\tpcds_result.json",
+            "pdfPath": "D:\\workspace\\zw\\awesome-pdf\\data\\tpcds-excutive-summary-ch\\tpcds_result.pdf"
+        }
+    ]
+}

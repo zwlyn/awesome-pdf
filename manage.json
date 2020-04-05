@@ -1,0 +1,14 @@
+{
+    "name": "tpce-simple-ch",
+    "datas":[
+        {
+            "name":"tpcedata",
+            "createTime":"2020-1-13",
+            "template": "tpce-simple-ch.json",
+            "templatePath": "",
+            "path":"",
+            "pdf": ""
+        }
+    ]
+
+}
