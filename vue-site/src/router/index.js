@@ -91,7 +91,7 @@ export const constantRoutes = [{
     //     }]
     // },
     {
-        path: '/pdfcombine',
+        path: '/',
         component: Layout,
         redirect: '/pdfcombine',
         children: [{
